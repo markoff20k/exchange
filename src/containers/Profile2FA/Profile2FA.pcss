@@ -1,0 +1,45 @@
+.td-pg-profile__2FA {
+	.td-pg-profile__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__row-item {
+		display: flex;
+		flex: 1;
+
+		> div {
+			flex: 1;
+			&:not(:last-child) {
+				border-right: solid 1px #848e9c;
+			}
+
+			&:not(:first-child) {
+
+			}
+		}
+
+		&:not(:last-child) {
+			border-bottom: solid 1px #848e9c;
+		}
+
+		&:not(:first-child) {
+			.td-pg-profile__security__row-item__title {
+			}
+		}
+
+		&__title {
+			display: list-item;
+
+			&::marker {
+				font-size: 1.2em;
+			}
+		}
+
+		&__action {
+			color: #2fb67e;
+			cursor: pointer;
+			text-decoration: underline #2fb67e;
+		}
+	}
+}
