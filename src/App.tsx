@@ -48,9 +48,6 @@ const NavBarContainer = React.lazy(() =>
 );
 
 
-
-
-
 const getTranslations = (lang: string, isMobileDevice: boolean) => {
 	if (isMobileDevice) {
 		return {
@@ -80,10 +77,11 @@ const RenderDeviceContainers = () => {
 	return (
 		<React.Fragment>
 			<HeaderContainer />
-			<HeaderAuthToolbarContainer />
+			{/*<HeaderAuthToolbarContainer />*/}
 			<CustomizationContainer />
 			<AlertsContainer />
 			<LayoutContainer />
+			<FooterContainer />
 
 		</React.Fragment>
 	);

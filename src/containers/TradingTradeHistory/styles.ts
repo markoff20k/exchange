@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const MarketHistory = styled.div`
-	background-color: #313445;
+	background color = #0b1426;
+	font-weight: 300;
+	font-size: 25px;
 	padding: 10px;
 	padding-right: 10px;
 	height: 100%;
@@ -22,9 +24,10 @@ export const MarketHistory = styled.div`
 		.td-tabs-nav-list {
 			display: flex;
 			.td-tabs-tab {
+				font0size: 13px;
 				font-weight: 500;
 				&.td-tabs-tab-active {
-					font-weight: 600;
+					font-weight: 500;
 					.td-tabs-tab-btn {
 						color: #fff;
 						border-bottom: 2px solid #2fb67e;
@@ -35,7 +38,9 @@ export const MarketHistory = styled.div`
 				}
 				.td-tabs-tab-btn {
 					color: #848e9c;
-					font-size: 14px;
+					font-size: 13px;
+					font-weight: 500;
+
 					padding: 5px 0;
 					outline: none;
 					cursor: pointer;
@@ -43,6 +48,8 @@ export const MarketHistory = styled.div`
 			}
 		}
 		.td-tabs-content-holder {
+			font-size: 12px;
+			font-weight: 200;
 			flex: 1;
 			.td-tabs-content {
 				height: 100%;
@@ -61,12 +68,13 @@ export const MarketHistory = styled.div`
 		overflow-x: hidden;
 		overflow-y: scroll;
 		position: relative;
+		font-weight: 300;
 		height: 100%;
 		&__negative {
-			color: var(--asks);
+			color: #ef5350;
 		}
 		&__positive {
-			color: var(--bids);
+			color: #13b887;
 		}
 		.td-table-container {
 			padding-top: 10px;

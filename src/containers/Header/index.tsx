@@ -266,7 +266,7 @@ export const Header: React.FC = () => {
 									>
 										<div className={classActiveItemDrop('for-issuers')}>
 											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Exchange Pro
+											Mercados
 										</div>
 									</Link>
 									<Link
@@ -297,7 +297,7 @@ export const Header: React.FC = () => {
 									to="/markets"
 									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
 								>
-									Exchange Pro
+									Mercados
 								</Link>
 							</div>
 						</div>

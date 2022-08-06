@@ -3,11 +3,11 @@ export const en = {
 	/**Trade history */
 	//'page.body.trade.tab.myTrades': 'My Trades',
 	'page.body.trade.tab.myTrades': 'Ordens executadas',
-	'page.body.trade.tab.marketTrades': 'Últimos negócios',
+	'page.body.trade.tab.marketTrades': 'Histórico de negociação',
 	/**New Order */
-	'page.body.trade.header.newOrder.content.buyWith': 'Buy With',
-	'page.body.trade.header.newOrder.content.title.buy': 'Buy',
-	'page.body.trade.header.newOrder.content.title.sell': 'Sell',
+	'page.body.trade.header.newOrder.content.buyWith': 'utilizará saldo em',
+	'page.body.trade.header.newOrder.content.title.buy': 'Comprar',
+	'page.body.trade.header.newOrder.content.title.sell': 'Vender',
 	/**Logger */
 	//'page.body.user.loggin': 'Log in',
 	'page.body.user.loggin': 'Acessar',
@@ -18,8 +18,8 @@ export const en = {
 	'page.body.trade.header.orderHistory': 'Histórico de ordens',
 	/**OrderBook */
 	//'page.body.trading.header.orderBook.header.title.price': 'Price',
-	'page.body.trading.header.orderBook.header.title.price': 'Preço unitário',
-	'page.body.trading.header.orderBook.header.title.amount': 'Qtd',
+	'page.body.trading.header.orderBook.header.title.price': 'Preço',
+	'page.body.trading.header.orderBook.header.title.amount': 'Montante',
 	'page.body.trading.header.orderBook.header.title.sum': 'Vol financeiro',
 	/**Vote */
 	'page.body.vote.msg.success': 'Vote success',

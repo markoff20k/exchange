@@ -25,8 +25,8 @@ export const en = {
 	'page.body.trade.header.markets.content.pair': 'Pair',
 	'page.body.trade.header.markets.content.price': 'Price',
 	'page.body.trade.header.markets.content.last_price': 'Last Price',
-	'page.body.trade.header.markets.content.change': 'Change',
-	'page.body.trade.header.markets.content.search': 'Search',
+	'page.body.trade.header.markets.content.change': 'Alteração',
+	'page.body.trade.header.markets.content.search': 'Procurar ativo',
 	'page.body.trade.header.markets.content.volume': 'Volume',
 
 	'page.body.trade.header.newOrder': 'Order Form',
@@ -519,7 +519,7 @@ export const en = {
 	'page.password2fa.message': 'Enter 2fa code from the app',
 	'page.forgotPassword.email': 'Email',
 	'page.forgotPassword.send': 'Send',
-	'page.noDataToShow': 'There is no data to show',
+	'page.noDataToShow': 'Sem registro',
 
 	'page.modal.withdraw.success': 'Success!',
 	'page.modal.withdraw.success.message.content': 'Your withdrawal request has been received',

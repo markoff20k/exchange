@@ -121,7 +121,7 @@ const OrderBookContainer = props => {
 
 			return arrBidsElm.map((item, i) => (
 				<TrStyle
-					color="rgba(47,182,126,0.4)"
+					color="#7a7e8b"
 					placement="right"
 					percentWidth={(item[3] as number) || 0}
 					key={i}

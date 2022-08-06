@@ -12,7 +12,7 @@ export const widgetOptions = (colorTheme?: string) => {
 		allow_symbol_change: false,
 		autosize: true,
 		calendar: true,
-		client_id: 'tradingview.com',
+		client_id: 'fortem-financial.io',
 		custom_css_url: '/css/tradingview.css',
 		debug: false,
 		details: true,
@@ -29,7 +29,7 @@ export const widgetOptions = (colorTheme?: string) => {
 		show_popup_button: true,
 		studies_overrides: {},
 		timeframe: '2D',
-		user_id: 'public_user_id',
+		user_id: 'fortem-financial.io',
 		withdateranges: false,
 
 		...customWidgetOptions(colorTheme),

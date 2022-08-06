@@ -38,7 +38,7 @@ const TradingComponent: React.FC<TradingScreenProps> = ({}) => {
 			dispatch(rangerConnectFetch({ withAuth: userLoggedIn }));
 		}
 	}, []);
-
+ 
 	return (
 		<div className="td-pg-trading">
 			<div className="td-pg-trading--bg td-pg-trading__item td-pg-trading--bg td-pg-trading__header-toolbar">

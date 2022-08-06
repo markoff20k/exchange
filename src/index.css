@@ -417,8 +417,8 @@
 	--header-toolbar-item-text-color: var(--secondary-contrast-cta-color);
 	--header-switcher-border-color-theme: var(--secondary-contrast-cta-color);
 	--header-switcher-background-color-theme-active: var(--dropdown-background-color);
-	--header-positive-text-color: var(--bids);
-	--header-negative-text-color: var(--asks);
+	--header-positive-text-color: #02c77a;
+	--header-negative-text-color: #ff3b69;
 	--header-toggle-menu-icon: var(--primary-text-color);
 
 	/*  ================================
@@ -2340,18 +2340,21 @@
 		}#wallet-list-screen .search-input::placeholder {
 			color: #fff;
 		}.td-pg-trading {
-	background: var(--main-background-color);
+	background: black;
 	display: grid;
-	font-size: calc(var(--font-size) * 1);
+	font-weight: 500 !important;
+	font-size: 13px !important;
+	
 	gap: 6px;
 	grid-template-columns: 4fr 8fr 4fr;
 	grid-template-rows: 70px 520px minmax(-webkit-min-content, 300px) 350px;
 	grid-template-rows: 70px 520px minmax(min-content, 300px) 350px;
 	margin-bottom: 6px;
+	margin-top: 6px;
 }.td-pg-trading .td-pg-trading__item {
 		position: relative;
 	}.td-pg-trading .td-pg-trading--bg {
-		background-color: #313445;
+		background-color: #0b1426 !important;
 	}.td-pg-trading .td-pg-trading__header-toolbar {
 		grid-column: 1/3;
 	}.td-pg-trading .td-pg-trading__market-trading {
@@ -4609,16 +4612,17 @@
 	}.pg-combined-order-book .change-icon {
 		margin-right: 0.5em;
 	}.group-wWM3zP_M- {
-	background-color: var(--base-bright) !important;
+	background-color: #0b1426  !important;
 }.pg-trading-chart {
 	background: transparent;
+	background-color: #0b1426 !important;
 	height: 89%;
 	left: 0;
 	position: relative;
 	top: 0;
 	width: 100%;
 }.pg-trading-chart #cryptobase_chart {
-		background: transparent;
+		background: transparent  !important;
 		height: calc(100% - 39px);
 	}.pg-trading-chart .cr-title-component {
 		padding: calc(var(--gap) * 2);
@@ -4635,9 +4639,11 @@
 		width: 100%;
 	}
 }.title-text {
-	color: white !important;
-	font-size: 20px;
+	color: #7a7e8b !important;
+	font-size: 16px;
 	font-weight: 500;
+	-webkit-filter: brightness(130%);
+	        filter: brightness(130%);
 }.pg-order {
 	margin: 0;
 	text-align: left;
@@ -4909,10 +4915,12 @@
 				padding: calc(var(--gap) * 1.26);
 			}
 }.pg-markets {
-	background-color: var(--body-background-color);
+	background-color: #0b1426 !important;
 	padding-bottom: calc(var(--gap) * 6.67);
 	text-align: left;
 	width: 100%;
+	font-weight: 500 !important;
+	font-size: 13px !important;
 }.pg-markets .cr-markets .cr-table__row--selected td {
 		color: var(--table-text-color);
 	}.pg-markets--loading {
@@ -4922,7 +4930,7 @@
 		height: 100%;
 		justify-content: center;
 	}.pg-markets .cr-markets .cr-search {
-			background: var(--body-background-color);
+			background: #0b1426;
 			bottom: 0;
 			display: flex;
 			padding: calc(var(--gap) * 0.83) var(--gap) calc(var(--gap) * 0.83) 0;
@@ -4938,11 +4946,11 @@
 			}.pg-markets .cr-markets .cr-table td:nth-child(2), .pg-markets .cr-markets .cr-table th:nth-child(2) {
 					text-align: right;
 				}.pg-markets .cr-table-header__content {
-		background: var(--subheader-background-color);
+		background: #0b1426;
 	}.pg-markets .cr-table-header__content .cr-title-component {
 			font-weight: normal;
 		}.cr-table__filter {
-	font-size: 1em !important;
+	font-size: 13px !important;
 	margin-left: calc(var(--gap) * 2);
 	margin-right: 0;
 	padding: 0 !important;
@@ -4955,9 +4963,9 @@
 			}.cr-markets .cr-table__row--selected td {
 					color: var(--table-text-color);
 				}.cr-markets .cr-table .__positive {
-			color: var(--bids) !important;
+			color: #13b887  !important;
 		}.cr-markets .cr-table .__negative {
-			color: var(--asks) !important;
+			color: #ef5350  !important;
 		}.pg-profile-page__referral {
 	width: 100%;
 }.pg-profile-page__referral fieldset {
@@ -6350,7 +6358,7 @@
 										}#marketList .container div div div .cx-market-item .rc-tabs .rc-tabs-nav .rc-tabs-nav-wrap .rc-tabs-nav-list .rc-tabs-tab-active {
 											border-bottom: 2px solid rgb(47, 182, 126);
 											color: #fff;
-											font-weight: bold;
+											font-weight: 500;
 										}#marketList .container div div div .cx-market-item .rc-tabs .rc-tabs-nav .rc-tabs-extra-content {
 									align-items: center;
 									display: flex;
@@ -16005,7 +16013,7 @@
 	/* typography */
 	--font-family: Inter, sans-serif;
 	--font-weight: normal;
-	--font-size: 10px !important;
+	--font-size: 13px !important;
 	--font-size-smaller: calc(var(--font-size) * 0.9);
 	--font-size-bigger: calc(var(--font-size) * 1.1);
 	--line-height: 1.2;

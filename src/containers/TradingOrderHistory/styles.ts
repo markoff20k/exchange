@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const OrderHistoryStyle = styled.div`
-	background-color: #313445;
+	background color = #0b1426;
 	padding: 10px 5px;
 	height: 350px;
 	margin-bottom: 3px;
+	font-weight: 500;
+	font-size: 13px;
 
 	.rc-tabs {
+		font-size: 13px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -47,7 +50,7 @@ export const OrderHistoryStyle = styled.div`
 						}
 						.rc-tabs-tab-btn {
 							color: #848e9c;
-							font-size: 14px;
+
 							padding: 5px 0;
 							outline: none;
 							cursor: pointer;
@@ -75,6 +78,8 @@ export const OrderHistoryStyle = styled.div`
 `;
 
 export const TableStyle = styled.table`
+	font-size: 13px;
+	font-weight: 500;
 	width: 100%;
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -93,6 +98,7 @@ export const TableStyle = styled.table`
 	tbody {
 		display: block;
 		overflow: auto;
+		font-size: 12.5px;
 		width: 100%;
 		height: 260px;
 		td {
@@ -120,6 +126,7 @@ export const TableStyle = styled.table`
 
 export const OpenOrdersStyle = styled.div`
 	height: 100%;
+	font-size: 13px;
 	${TableStyle} {
 		tr {
 			th,

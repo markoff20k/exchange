@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const MarketTradingStyle = styled.div`
-	background-color: #313445;
+	background-color: #0b1426;
 	height: 100%;
-	font-size: 11px;
+	font-size: 12.5px;
+	font-weight: 500;
 	padding: 15px 0;
 	overflow: hidden;
 	display: flex;
@@ -18,6 +19,8 @@ export const SearchBlockStyle = styled.div`
 		align-items: center;
 		border-bottom: 1px solid #848e9c;
 		padding: 5px 0;
+		font-size: 12px;
+
 
 		.search-icon {
 			margin-right: 20px;
@@ -73,6 +76,8 @@ export const StarBlockStyle = styled.div`
 	padding: 0 10px;
 	display: flex;
 	align-items: center;
+	font-weight: 400;
+	font-size: 12.5px;	
 	button {
 		position: relative;
 		height: 100%;
@@ -91,6 +96,8 @@ export const StarBlockStyle = styled.div`
 		:hover {
 			:not(.active) {
 				background-color: rgb(41, 45, 63);
+			
+				font-weight: 500;
 			}
 			.td-markets-trading-list-dropdown-wrapper {
 				display: inline-block;
@@ -152,10 +159,10 @@ export const MarketsListTradingStyle = styled.div`
 		position: relative;
 		height: 100%;
 		&__negative {
-			color: var(--asks);
+			color: #ef5350;
 		}
 		&__positive {
-			color: var(--bids);
+			color: #13b887;
 		}
 		.sort-icon svg {
 			height: calc(0.5em * 1.67);
@@ -166,6 +173,7 @@ export const MarketsListTradingStyle = styled.div`
 			vertical-align: middle;
 			width: calc(0.5em * 2);
 			width: calc(var(--gap) * 2);
+			color: white;
 		}
 		.td-table-container {
 			position: absolute;
@@ -221,9 +229,12 @@ export const MarketsListTradingStyle = styled.div`
 			}
 			tbody {
 				height: 100%;
+				font-size: 11.7px;
+				font-weight: 250;
 				overflow-y: scroll;
 				background-color: transparent;
 				padding-bottom: 50px;
+				padding-top: 8px;
 				tr {
 					position: relative;
 					&.td-table__row--selected {

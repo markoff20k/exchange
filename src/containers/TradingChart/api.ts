@@ -56,7 +56,7 @@ export const dataFeedObject = (tradingChart: TradingChartComponent, markets: Mar
 			const symbol = markets.find(m => m.id === symbolName || m.name === symbolName);
 
 			if (!symbol) {
-				return setTimeout(() => onResolveErrorCallback('Symbol not found'), 0);
+				return setTimeout(() => onResolveErrorCallback('Ativo não encontrado'), 0);
 			}
 
 			const symbolStub = {
@@ -65,7 +65,7 @@ export const dataFeedObject = (tradingChart: TradingChartComponent, markets: Mar
 				description: '',
 				type: 'bitcoin',
 				session: '24x7',
-				timezone: 'Etc/UTC',
+				timezone: 'America/Sao_Paulo',
 				ticker: symbol.id,
 				minmov: 1,
 				pricescale: Math.pow(10, symbol.price_precision),

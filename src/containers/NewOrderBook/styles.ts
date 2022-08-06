@@ -18,17 +18,21 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 	right: 0;
 	height: calc(100% - 6px);
 	color: white;
+	
+	font-weight: 500;
 	padding: 0 10px;
+	background-color: #0b1426;
 	.td-order-book {
-		background-color: #313445;
+		background-color: #0b1426;
 		height: 100%;
+		font-weight: 500;
 		padding-top: 10px;
 		padding-bottom: 15px;
 		&-item__negative {
-			color: var(--header-negative-text-color);
+			color: #ef5350;
 		}
 		&-item__positive {
-			color: var(--header-positive-text-color);
+			color: #13b887;
 		}
 		&-tooltip {
 			bottom: 200px;
@@ -43,7 +47,10 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			height: ${OrderBookStyleVar.tbHeadHeight};
 			padding-top: 6px;
 			padding-bottom: 6px;
-			color: #848e9c;
+			color: #7a7e8b;
+			font-size: 13px;
+			filter: brightness(130%);
+
 			> div {
 				display: inline-block;
 				width: 28%;
@@ -61,7 +68,7 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 				font-size: 20px;
 			}
 			&__usd {
-				color: #848e9c;
+				color: #0b1426 ;
 			}
 		}
 		&-table {
