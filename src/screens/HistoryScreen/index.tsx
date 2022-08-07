@@ -222,7 +222,7 @@ export const HistoryScreen = () => {
 
 				const marketToDisplay = marketsData.find(m => m.id === market) || {
 					name: '',
-					price_precision: 0,
+					price_precision: 2,
 					amount_precision: 0,
 				};
 				const marketName = marketToDisplay ? marketToDisplay.name : market;

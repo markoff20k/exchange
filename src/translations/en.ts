@@ -25,7 +25,7 @@ export const en = {
 	'page.body.trade.header.markets.content.pair': 'Pair',
 	'page.body.trade.header.markets.content.price': 'Price',
 	'page.body.trade.header.markets.content.last_price': 'Last Price',
-	'page.body.trade.header.markets.content.change': 'Alteração',
+	'page.body.trade.header.markets.content.change': 'Variação',
 	'page.body.trade.header.markets.content.search': 'Procurar ativo',
 	'page.body.trade.header.markets.content.volume': 'Volume',
 

@@ -210,7 +210,7 @@ export const Register = (props: RegisterFormProps) => {
 			<div className="pg-sign-up-screen__login">
 				<span>
 					{intl.formatMessage({ id: 'page.header.signUp.alreadyRegistered' })}
-					<span onClick={() => history.push('/login')} className="pg-sign-up-screen__login-button">
+					<span onClick={() => history.push('/banner/authentication/sign-in/basic')} className="pg-sign-up-screen__login-button">
 						{intl.formatMessage({ id: 'page.mobile.header.signIn' })}
 					</span>
 				</span>

@@ -93,7 +93,7 @@ export const AirdropCoinListMobileScreen: React.FC<AirdropCoinListScreenProps> =
 				}),
 			);
 		} else {
-			history.push('/login');
+			history.push('/banner/authentication/sign-in/basic');
 		}
 	};
 

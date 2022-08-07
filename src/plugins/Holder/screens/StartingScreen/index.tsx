@@ -69,7 +69,7 @@ export const HolderStartingScreen = () => {
 		}
 		return (
 			<h2>
-				👉 Please <Link to="/login">login in</Link> Fortem Exchange.
+				👉 Please <Link to="/banner/authentication/sign-in/basic">login in</Link> Fortem Exchange.
 			</h2>
 		);
 	};

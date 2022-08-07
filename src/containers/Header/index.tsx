@@ -129,7 +129,7 @@ export const Header: React.FC = () => {
 		return (
 			isLoggedIn && (
 				<Link
-					to="/admin/pages/profile/overview"
+					to="/admin/account/settings"
 					onClick={() => {
 						setStateActiveNow('account');
 						setActiveItemDrop('perfil');
@@ -452,26 +452,6 @@ export const Header: React.FC = () => {
 									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
 								>
 									Notícias
-								</Link>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className={classLinkActive('help')} onClick={() => setStateActiveNow('help')}>
-								<Link
-									to=""
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Ajuda
-								</Link>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className={classLinkActive('about')} onClick={() => setStateActiveNow('about')}>
-								<Link
-									to=""
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Sobre a Fortem
 								</Link>
 							</div>
 						</div>

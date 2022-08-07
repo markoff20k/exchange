@@ -121,7 +121,7 @@ const OrderBookContainer = props => {
 
 			return arrBidsElm.map((item, i) => (
 				<TrStyle
-					color="#7a7e8b"
+					color="#13b887"
 					placement="right"
 					percentWidth={(item[3] as number) || 0}
 					key={i}
@@ -142,7 +142,7 @@ const OrderBookContainer = props => {
 
 			return arrAsksElm.map((item, i) => (
 				<TrStyle
-					color="rgba(224,30,90,0.2)"
+					color="#ef5350"
 					placement="left"
 					percentWidth={(item[3] as number) || 0}
 					key={i}
@@ -164,7 +164,7 @@ const OrderBookContainer = props => {
 		render: () => JSX.Element;
 	}> = [
 		{
-			labelTooltip: 'Order Book',
+			labelTooltip: 'Livro de Ordens',
 			key: 'all',
 			render: () => (
 				<OrderBookSvg
@@ -177,7 +177,7 @@ const OrderBookContainer = props => {
 			),
 		},
 		{
-			labelTooltip: 'Buy',
+			labelTooltip: 'Compradores',
 			key: 'buy',
 			render: () => (
 				<OrderBookBuySvg
@@ -190,7 +190,7 @@ const OrderBookContainer = props => {
 			),
 		},
 		{
-			labelTooltip: 'Sell',
+			labelTooltip: 'Vendedores',
 			key: 'sell',
 			render: () => (
 				<OrderBookSellSvg

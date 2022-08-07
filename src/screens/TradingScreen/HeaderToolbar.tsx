@@ -118,7 +118,7 @@ const HeaderToolbarContainer: React.FC = () => {
 	const bidUnit = currentMarket && currentMarket.quote_unit.toUpperCase();
 	const askUnit = currentMarket && currentMarket.base_unit.toUpperCase();
 	const amountPrecision = (currentMarket && currentMarket.amount_precision) || 6;
-	const pricePrecision = (currentMarket && currentMarket.price_precision) || 4;
+	const pricePrecision = (currentMarket && currentMarket.price_precision) || 2;
 
 	return (
 		<HeaderToolbarStyle>

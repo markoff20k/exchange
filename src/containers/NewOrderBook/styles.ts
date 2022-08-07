@@ -65,7 +65,7 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			margin: 5px 18px !important;
 			font-size: 14px;
 			&__last-price {
-				font-size: 20px;
+				font-size: 18px;
 			}
 			&__usd {
 				color: #0b1426 ;

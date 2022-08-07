@@ -19,18 +19,18 @@ export const pgRoutes = (isLoggedIn: boolean, isLight?: boolean): string[][] => 
 	return isLoggedIn ? routes : routesUnloggedIn;
 };
 
-export const DEFAULT_CCY_PRECISION = 4;
-export const STORAGE_DEFAULT_LIMIT = 20;
-export const ORDER_BOOK_DEFAULT_SIDE_LIMIT = 100;
+export const DEFAULT_CCY_PRECISION = 2;
+export const STORAGE_DEFAULT_LIMIT = 50;
+export const ORDER_BOOK_DEFAULT_SIDE_LIMIT = 200;
 export const DEFAULT_TRADING_VIEW_INTERVAL = '5';
 export const VALUATION_PRIMARY_CURRENCY = 'USD';
 export const VALUATION_SECONDARY_CURRENCY = 'BTC';
 
-export const PASSWORD_ENTROPY_STEP = 14;
+export const PASSWORD_ENTROPY_STEP = 8;
 
-export const DEFAULT_KYC_STEPS = ['email', 'profile', 'document', 'address'];
+export const DEFAULT_KYC_STEPS = ['email', 'profile', 'document'];
 
-export const DEFAULT_ORDER_TYPES: DropdownElem[] = ['Limit', 'Market'];
+export const DEFAULT_ORDER_TYPES: DropdownElem[] = ['Limit', 'Market', 'Stop' ];
 export const AMOUNT_PERCENTAGE_ARRAY = [0.25, 0.5, 0.75, 1];
 
 export const DEFAULT_MARKET = {
@@ -57,12 +57,12 @@ export const colors = {
 			moon: 'var(--primary-text-color)',
 		},
 		orderBook: {
-			asks: 'var(--asks-level-4)',
-			bids: 'var(--bids-level-4)',
+			asks: '#ef5350',
+			bids: '#13b887',
 		},
 		depth: {
-			fillAreaAsk: '#fa5252',
-			fillAreaBid: '#12b886',
+			fillAreaAsk: '#ef5350',
+			fillAreaBid: '#13b887',
 			gridBackgroundStart: '#1a243b',
 			gridBackgroundEnd: '#1a243b',
 			strokeAreaAsk: '#fa5252',

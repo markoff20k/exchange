@@ -5,7 +5,7 @@ export const en = {
 	'page.body.trade.tab.myTrades': 'Ordens executadas',
 	'page.body.trade.tab.marketTrades': 'Histórico de negociação',
 	/**New Order */
-	'page.body.trade.header.newOrder.content.buyWith': 'utilizará saldo em',
+	'page.body.trade.header.newOrder.content.buyWith': 'Utilizará saldo em',
 	'page.body.trade.header.newOrder.content.title.buy': 'Comprar',
 	'page.body.trade.header.newOrder.content.title.sell': 'Vender',
 	/**Logger */

@@ -189,7 +189,7 @@ export const OrdersTabScreen = () => {
 		} = item;
 		const currentMarket = marketsData.find(m => m.id === market) || {
 			name: '',
-			price_precision: 0,
+			price_precision: 2,
 			amount_precision: 0,
 		};
 		const orderType = getType(side, ord_type);
