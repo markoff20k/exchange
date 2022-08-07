@@ -150,19 +150,23 @@ export const OrderStyle = styled.div`
 							}
 						}
 						.logger-order {
-							border-radius: 2px;
+							
+							border: 1px solid #1EBDB2;
+							border-radius: 5px;
 							height: 32px;
-							background-color: #4e5463;
+							background-color: transparent;
+
 							span {
 								margin: 0 5px;
 								line-height: 32px;
 							}
 							a {
-								font-size: 13px;
-								color: #2fb67e;
+								font-size: 15px;
+								color: white;
 								line-height: 32px;
 								:hover {
-									color: #2fb67e;
+									background-color: transparent;
+									color: white;
 								}
 							}
 						}

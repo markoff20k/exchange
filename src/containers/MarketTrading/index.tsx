@@ -52,7 +52,7 @@ const MarketTradingContainer: React.FC = () => {
 	const tickers = useSelector(selectMarketTickers);
 
 	const [searchFieldState, setSearchFieldState] = React.useState<string>('');
-	const [starSelectedState, setStarSelectedState] = React.useState<string>('ALL');
+	const [starSelectedState, setStarSelectedState] = React.useState<string>('Todos');
 	const [checkedDropdownState, setCheckedDropdownState] = React.useState<CheckedDropdownState>({});
 	const [favoriteKeyState, setFavoriteKeyState] = React.useState<string[]>([]);
 	const [radioSelectedState, setRadioSelectedState] = React.useState<'change' | 'volume'>('change');
@@ -62,22 +62,22 @@ const MarketTradingContainer: React.FC = () => {
 			key: 'FAVORITE',
 		},
 		{
-			key: 'ALL',
+			key: 'Todos',
 		},
 		{
-			key: 'BTC',
+			key: 'BRL',
 		},
 		{
-			key: 'ETH',
-		},
-		{
-			key: 'BNB',
+			key: 'USD',
 		},
 		{
 			key: 'USDT',
 		},
 		{
-			key: 'OTHER',
+			key: 'BTC',
+		},
+		{
+			key: 'Outros',
 			listKeyDropDown: LIST_KEY_FIAT_DROPDOWN,
 		},
 	];
@@ -192,7 +192,7 @@ const MarketTradingContainer: React.FC = () => {
 						onClick={() => handleChangeRadio('change')}
 					>
 						<i className={classnames({ active: radioSelectedState === 'change' })} />
-						<label className="d-flex align-items-center mb-0 mr-2">Change</label>
+						<label className="d-flex align-items-center mb-0 mr-2">Variação</label>
 					</div>
 					<div
 						className="select-item d-flex align-items-center justify-content-center h-100"
@@ -208,7 +208,7 @@ const MarketTradingContainer: React.FC = () => {
 
 	const getData = () => {
 		let data: Market[] = cloneDeep(markets);
-		if (starSelectedState === 'ALL') {
+		if (starSelectedState === 'Todos') {
 			return data.filter(market => market.name.toLowerCase().includes(searchFieldState.toLowerCase()));
 		}
 		if (starSelectedState === 'FAVORITE') {

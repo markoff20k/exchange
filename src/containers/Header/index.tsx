@@ -239,60 +239,27 @@ export const Header: React.FC = () => {
 	
 		<div className="headerDesktop-screen">
 			<div className="container-header">
-				<nav className="header d-flex flex-row justify-content-between align-items-center">
 					<div className="header__left-menu d-flex flex-row align-items-center">
 						<div className="header__left-menu__logo" onClick={() => setStateActiveNow('')}>
 							<Link to="/">
 								<img src={Logo} alt="" />
 							</Link>
 						</div>
-						
-
-
 						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className="header__left-menu__dropdown__wrap">
-								<span className={classLinkActiveTitleDrop('Trade')}>
-									Negociação
-									<div className="header__left-menu__dropdown__wrap__dropbtn__icon-drop-down"> </div>
-								</span>
-								<div className="header__left-menu__dropdown__wrap__content">
-									<Link
-										to=""
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('Trade');
-											setActiveItemDrop('for-issuers');
-										}}
-									>
-										<div className={classActiveItemDrop('for-issuers')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Mercados
-										</div>
-									</Link>
-									<Link
-										to=""
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('for-investors');
-										}}
-									>
-										<div className={classActiveItemDrop('for-investors')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Exchange Fast
-										</div>
-									</Link>
-
-								</div>
+							<div className="header__left-menu__dropdown__wrap" style={{ top: '4px', font:'36px', color: '#1EDED0',  left: '20px' }} >
+								|  EXCHANGE  | 
 							</div>
 						</div>
+
+				
+			
 
 						
 						
 						
 						
 						<div className="header__left-menu__dropdown flex-shrink-0">
-							<div className={classLinkActive('markets')} onClick={() => setStateActiveNow('markets')}>
+							<div className={classLinkActive('markets')} onClick={() => setStateActiveNow('markets')} style={{left: '20px' }}>
 								<Link
 									to="/markets"
 									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
@@ -301,167 +268,13 @@ export const Header: React.FC = () => {
 								</Link>
 							</div>
 						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0 ">
-							<div className={classLinkActive('ieo')} onClick={() => setStateActiveNow('ieo')}>
-								<Link
-									to="/tokens"
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Tokens
-								</Link>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0 d-none d-lg-block d-xl-block ">
-							<div className={classLinkActive('stake')} onClick={() => setStateActiveNow('stake')}>
-								<Link
-									to="/fortem-token"
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Token Fortem
-								</Link>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className="header__left-menu__dropdown__wrap">
-								<span className={classLinkActiveTitleDrop('More')}>
-									Mais
-									<div className="header__left-menu__dropdown__wrap__dropbtn__icon-drop-down"> </div>
-								</span>
-								<div className="header__left-menu__dropdown__wrap__content">
-									<Link
-										to=""
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('for-issuers');
-										}}
-									>
-										<div className={classActiveItemDrop('for-issuers')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Emissores
-										</div>
-									</Link>
-									<Link
-										to=""
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('for-investors');
-										}}
-									>
-										<div className={classActiveItemDrop('for-investors')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Investidores
-										</div>
-									</Link>
-									<Link
-										to="/airdrops"
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('airdrops');
-										}}
-									>
-										<div className={classActiveItemDrop('airdrops')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Airdrops
-										</div>
-									</Link>
-									<Link
-										to="/trading-competition"
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('trading-competition');
-										}}
-									>
-										<div className={classActiveItemDrop('trading-competition')}>
-											<FaAward className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Competitions
-										</div>
-									</Link>
-									<Link
-										to="/quant-zone"
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('quant-zone');
-										}}
-									>
-										<div className={classActiveItemDrop('quant-zone')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Quant Zone
-										</div>
-									</Link>
-									<Link
-										to="/advanced-trading"
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('More');
-											setActiveItemDrop('advanced-trading');
-										}}
-									>
-										<div className={classActiveItemDrop('advanced-trading')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Advanced
-										</div>
-									</Link>
-								</div>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className="header__left-menu__dropdown__wrap">
-								<span className={classLinkActiveTitleDrop('Learn')}>
-									Aprenda
-									<div className="header__left-menu__dropdown__wrap__dropbtn__icon-drop-down"> </div>
-								</span>
-								<div className="header__left-menu__dropdown__wrap__content">
-									<Link
-										to=""
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('Learn');
-											setActiveItemDrop('Research');
-										}}
-									>
-										<div className={classActiveItemDrop('research')}>
-											<FaGift className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Research
-										</div>
-									</Link>
-									<Link
-										to="/"
-										className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-										onClick={() => {
-											setStateActiveNow('Learn');
-											setActiveItemDrop('Academy');
-										}}
-									>
-										<div className={classActiveItemDrop('academy')}>
-											<FaAward className="header__left-menu__dropdown__wrap__content__title__icon mr-2" />
-											Academy
-										</div>
-									</Link>
-								</div>
-							</div>
-						</div>
-						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className={classLinkActive('news')} onClick={() => setStateActiveNow('news')}>
-								<Link
-									to=""
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Notícias
-								</Link>
-							</div>
-						</div>
-					</div>
 
-					<div className="header__right-menu d-flex align-items-center flex-row">
-						{renderUnLogin()}
-						{renderProfileTab()}
+
+
+	
+	
 					</div>
-				</nav>
+		
 			</div>
 		</div>
 

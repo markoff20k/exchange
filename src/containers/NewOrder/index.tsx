@@ -646,7 +646,7 @@ export const NewOrder: React.FC<OrderProps> = ({}) => {
 							) : (
 								<div className="logger-order w-100 d-flex justify-content-center align-item-center">
 									<Link to="/banner/authentication/sign-in/basic"> {intl.formatMessage({ id: 'page.body.user.loggin' })}</Link>
-									<span>or</span>
+									<span>ou</span>
 									<Link to="/banner/authentication/sign-up/basic"> {intl.formatMessage({ id: 'page.body.user.register' })}</Link>
 								</div>
 							)}
