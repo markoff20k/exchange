@@ -18,8 +18,8 @@ export const defaultConfig: Config = {
 	msAlertDisplayTime: '5000',
 	incrementalOrderBook: true,
 	finex: false,
-	isResizable: false,
-	isDraggable: false,
+	isResizable: true,
+	isDraggable: true,
 	languages: ['pt'],
 	usernameEnabled: true,
 	sessionCheckInterval: '15000',
@@ -50,12 +50,12 @@ export const authzURL = () => Cryptobase.config.api.authzURL;
 export const switchURL = () => Cryptobase.config.api.switchURL;
 export const ieoURL = () => Cryptobase.config.api.ieoURL;
 export const downstreamURL = () => Cryptobase.config.api.downstreamURL;
-export const minutesUntilAutoLogout = (): string => Cryptobase.config.minutesUntilAutoLogout || '5';
+export const minutesUntilAutoLogout = (): string => Cryptobase.config.minutesUntilAutoLogout || '15';
 export const withCredentials = () => Cryptobase.config.withCredentials;
 export const defaultStorageLimit = () => Cryptobase.config.storage.defaultStorageLimit || STORAGE_DEFAULT_LIMIT;
 export const orderBookSideLimit = () => Cryptobase.config.storage.orderBookSideLimit || ORDER_BOOK_DEFAULT_SIDE_LIMIT;
 export const gaTrackerKey = (): string => Cryptobase.config.gaTrackerKey || '';
-export const msAlertDisplayTime = (): string => Cryptobase.config.msAlertDisplayTime || '5000';
+export const msAlertDisplayTime = (): string => Cryptobase.config.msAlertDisplayTime || '10000';
 export const rangerReconnectPeriod = (): number =>
 	Cryptobase.config.rangerReconnectPeriod ? Number(Cryptobase.config.rangerReconnectPeriod) : 1;
 export const incrementalOrderBook = (): boolean => Cryptobase.config.incrementalOrderBook || false;
