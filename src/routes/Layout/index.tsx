@@ -180,7 +180,7 @@ const PublicRoute: React.FunctionComponent<any> = ({ component: CustomComponent,
 	if (isLogged) {
 		return (
 			<Route {...rest}>
-				<Redirect to={'/admin/pages/profile/overview'} />
+				<Redirect to={'/market/'} />
 			</Route>
 		);
 	}
