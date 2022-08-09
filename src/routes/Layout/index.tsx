@@ -217,8 +217,8 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 
 		if (!isLoggedIn && prevProps.isLoggedIn && !userLoading) {
 			this.props.walletsReset();
-			if (!history.location.pathname.includes('/market')) {
-				history.push('/market/');
+			if (!history.location.pathname.includes('/exchange')) {
+				history.push('/exchange/');
 			}
 		}
 
@@ -247,7 +247,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 			configsLoading,
 			platformAccessStatus,
 		} = this.props;
-		const tradingCls = location.pathname.includes('/market') ? 'trading-layout' : '';
+		const tradingCls = location.pathname.includes('/exchange') ? 'trading-layout' : '';
 		toggleColorTheme(colorTheme);
 
 		if (configsLoading && !platformAccessStatus.length) {
@@ -388,9 +388,9 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 							component={ProfileMobileScreen}
 						/>
 
-						<Route exact={false} path="/market/:market?" component={NewTradingScreenMobile} />
+						<Route exact={false} path="/exchange/:market?" component={NewTradingScreenMobile} />
 						<Route exact={true} path="/" component={HomePageScreenMobile} />
-						<Route exact={true} path="/markets" component={NewMarketsScreenMobile} />
+						<Route exact={true} path="/exchange" component={NewMarketsScreenMobile} />
 						<Route path="/ieo" exact component={IEOListMobileScreen} />
 						<Route path="/ieo/detail/:ieoID" exact component={IEODetailMobileScreen} />
 						<Route path="/trading-competition" exact component={TradingCompetionListMobileScreen} />
@@ -406,7 +406,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 						<Route path="/airdrops" exact component={AirdropCoinListMobileScreen} />
 						{/* new feature */}
 						<Route path="**">
-							<Redirect to="/market/" />
+							<Redirect to="/exchange/" />
 						</Route>
 					</Switch>
 					{isLoggedIn && <WalletsFetch />}
@@ -469,10 +469,10 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 				
 					<Route path="/404" component={RestrictedScreen} />
 					<Route path="/500" component={MaintenanceScreen} />
-					<Route exact={false} path="/market/:market?" component={TradingScreen} />
-					<Route exact={true} path="/" component={FortemIOHomePage} />
+					<Route exact={false} path="/exchange/:market?" component={TradingScreen} />
+					{/*<Route exact={true} path="/" component={FortemIOHomePage} />*/}
 					<Route exact={false} path="/fee" component={AssetsFeeScreen} />
-					<Route exact path="/markets" component={MarketsList} />
+					<Route exact path="/exchange/markets" component={MarketsList} />
 					<Route path="/announcement" exact component={AnnouncementScreen} />
 					<Route path="/referral" component={Referral} />
 
@@ -558,7 +558,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 					<Route path="/stake" exact component={StakingListScreen} />
 					<Route path="/stake/detail/:stake_id" exact component={StakingDetailScreen} />
 					<Route path="**">
-						<Redirect to="/market/" />
+						<Redirect to="/" />
 					</Route>
 				</Switch>
 				{isLoggedIn && <WalletsFetch />}

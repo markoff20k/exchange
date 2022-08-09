@@ -127,7 +127,7 @@ const OrderBookContainer = props => {
 					key={i}
 					onClick={() => handleOnSelectBids(i.toString(), total[i])}
 				>
-					<td className="td-order-book-item__positive">{item[0]}</td>
+					<td className="td-order-book-item__positive flash_green">{item[0]}</td>
 					<td>{item[1]}</td>
 					<td>{item[2]}</td>
 				</TrStyle>
@@ -148,7 +148,7 @@ const OrderBookContainer = props => {
 					key={i}
 					onClick={() => handleOnSelectAsks(i.toString(), total[i])}
 				>
-					<td className="td-order-book-item__negative">{item[0]}</td>
+					<td className="td-order-book-item__negative flash_red">{item[0]}</td>
 					<td>{item[1]}</td>
 					<td>{item[2]}</td>
 				</TrStyle>
@@ -260,7 +260,7 @@ const OrderBookContainer = props => {
 							>
 								{Decimal.formatRemoveZero(
 									+get(currentTicker, 'last', 0),
-									get(currentMarket, 'price_precision', 0),
+									get(currentMarket, 2, 0),
 								)}
 								{cls === 'positive' ? <img src={upSvg} /> : <img src={downSvg} />}
 							</Col>
