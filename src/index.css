@@ -4623,6 +4623,21 @@
   }@keyframes flash_green {
 	from { background-color: #13b887; }
 	to { background-color: transparent; }
+  }@-webkit-keyframes flashX {
+	from { background-color: #FDA736; }
+	to { background-color: transparent; }
+  }@keyframes flashX {
+	from { background-color: #FDA736; }
+	to { background-color: transparent; }
+  }.flash_green {
+	-webkit-animation: flash_green 2s ; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+	animation:         flash_green 2s ; /* IE 10+ */
+  }.flash_red {
+	-webkit-animation: flash_red 2s ; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+	animation:         flash_red 2s ; /* IE 10+ */
+  }.flashX {
+	-webkit-animation: flashX 2s ; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+	animation:         flashX 2s ; /* IE 10+ */
   }.group-wWM3zP_M- {
 	background-color: #0b1426  !important;
 }.pg-trading-chart {

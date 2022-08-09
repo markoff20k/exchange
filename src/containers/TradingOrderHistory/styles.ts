@@ -159,7 +159,7 @@ export const OrderHistoryListStyle = styled.div`
 			}
 			td {
 				.td-order-history-list-executed {
-					color: var(--system-yellow);
+					color: var(#13b887);
 				}
 
 				.td-order-history-list-canceled {
@@ -167,9 +167,54 @@ export const OrderHistoryListStyle = styled.div`
 				}
 
 				.td-order-history-list-opened {
-					color: var(--system-green);
+					color: var(--system-yellow);
 				}
 			}
 		}
 	}
+
+.flash_red {
+
+	webkit-animation: flash_red 2.5s ; /* Safari 4+ */
+	moz-animation:    flash_red 2.5s ; /* Fx 5+ */
+	o-animation:      flash_red 2.5s ; /* Opera 12+ */
+	animation:        flash_red 2.5s ; /* IE 10+ */	
+
+	}
+
+	@-webkit-keyframes flash_red {
+		from { background-color: #ef5350  ; }
+		to { background-color: transparent; }
+	  }
+	  @-moz-keyframes flash_red {
+		from { background-color: #ef5350  ; }
+		to { background-color: transparent; }
+	  }
+	  @-o-keyframes flash_red {
+		from { background-color: #ef5350  ; }
+		
+		to { background-color: transparent; }
+	  }
+	  @keyframes flash_red {
+		from { background-color: #ef5350 ; }
+		to { background-color: transparent; }
+	  }
+
+
+	@-webkit-keyframes flash_green {
+		from { background-color: #13b887 ; }
+		to { background-color: transparent; }
+	  }
+	  @-moz-keyframes flash_green {
+		from { background-color: #13b887 ; }
+		to { background-color: transparent; }
+	  }
+	  @-o-keyframes flash_green {
+		from { background-color: #13b887 ; }
+		to { background-color: transparent; }
+	  }
+	  @keyframes flash_green {
+		from { background-color: #13b887; }
+		to { background-color: transparent; }
+	  }
 `;

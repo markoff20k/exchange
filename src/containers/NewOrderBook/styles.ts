@@ -24,6 +24,7 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 	background-color: #0b1426;
 	.td-order-book {
 		background-color: #0b1426;
+		animation:        flashX 2.5s ;
 		height: 100%;
 		font-weight: 500;
 		padding-top: 10px;
@@ -93,12 +94,15 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			thead,
 			tbody {
 				display: block;
+				animation:        flashX 2.5s ;
 				tr {
 					display: block;
 					background-color: transparent;
 					cursor: pointer;
+					animation:        flashX 2.5s ;
 					:hover {
 						background-color: #0b1426 ;
+						animation:        flashX 2.5s ;
 					}
 					td,
 					th {
@@ -118,9 +122,11 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			tbody {
 				height: 100%;
 				overflow-y: scroll;
+				animation:        flashX 2.5s ;
 				tr {
 					margin-top: 1px;
 					margin-bottom: 1px;
+					animation:        flashX 2.5s ;
 					
 					webkit-animation: flash_green 2.5s ; /* Safari 4+ */
 					moz-animation:    flash_green 2.5s ; /* Fx 5+ */
@@ -135,6 +141,7 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			}
 			&.td-reverse-table-body {
 				tbody {
+					animation:        flashX 2.5s ;
 					transform: rotate(180deg);
 					.td-order-book-table__empty_data {
 						transform: rotate(180deg);					

@@ -73,13 +73,13 @@ export const OpenOrders: React.FC<OpenOrderProps> = ({}) => {
 
 			return [
 				localeDate(created_at, 'fullDate'),
-				<span style={{ color: setTradeColor(side).color }} key={id}>
+				<span style={{ color: setTradeColor(side).color }} key={id} >
 					{orderType}
 				</span>,
-				<span style={{ color: setTradeColor(side).color }} key={id}>
+				<span style={{ color: setTradeColor(side).color }} key={id} >
 					{Decimal.formatRemoveZero(price, priceFixed)}
 				</span>,
-				<span style={{ color: setTradeColor(side).color }} key={id}>
+				<span style={{ color: setTradeColor(side).color }} key={id} >
 					{Decimal.formatRemoveZero(remainingAmount, amountFixed)}
 				</span>,
 				<span style={{ color: setTradeColor(side).color }} key={id}>
