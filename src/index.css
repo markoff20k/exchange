@@ -4611,7 +4611,19 @@
 		font-weight: 500;
 	}.pg-combined-order-book .change-icon {
 		margin-right: 0.5em;
-	}.group-wWM3zP_M- {
+	}@-webkit-keyframes flash_red {
+	from { background-color: #ef5350  ; }
+	to { background-color: transparent; }
+  }@keyframes flash_red {
+	from { background-color: #ef5350 ; }
+	to { background-color: transparent; }
+  }@-webkit-keyframes flash_green {
+	from { background-color: #13b887 ; }
+	to { background-color: transparent; }
+  }@keyframes flash_green {
+	from { background-color: #13b887; }
+	to { background-color: transparent; }
+  }.group-wWM3zP_M- {
 	background-color: #0b1426  !important;
 }.pg-trading-chart {
 	background: transparent;
