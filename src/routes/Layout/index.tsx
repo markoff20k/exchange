@@ -180,7 +180,7 @@ const PublicRoute: React.FunctionComponent<any> = ({ component: CustomComponent,
 	if (isLogged) {
 		return (
 			<Route {...rest}>
-				<Redirect to={'/admin/pages/profile/overview'} />
+				<Redirect to={'/admin/account/settings'} />
 			</Route>
 		);
 	}
@@ -217,8 +217,8 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 
 		if (!isLoggedIn && prevProps.isLoggedIn && !userLoading) {
 			this.props.walletsReset();
-			if (!history.location.pathname.includes('/exchange')) {
-				history.push('/exchange/');
+			if (!history.location.pathname.includes('/market')) {
+				history.push('/market/');
 			}
 		}
 
@@ -247,7 +247,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 			configsLoading,
 			platformAccessStatus,
 		} = this.props;
-		const tradingCls = location.pathname.includes('/exchange') ? 'trading-layout' : '';
+		const tradingCls = location.pathname.includes('/market') ? 'trading-layout' : '';
 		toggleColorTheme(colorTheme);
 
 		if (configsLoading && !platformAccessStatus.length) {
@@ -388,9 +388,9 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 							component={ProfileMobileScreen}
 						/>
 
-						<Route exact={false} path="/exchange/:market?" component={NewTradingScreenMobile} />
+						<Route exact={false} path="/market/:market?" component={NewTradingScreenMobile} />
 						<Route exact={true} path="/" component={HomePageScreenMobile} />
-						<Route exact={true} path="/exchange" component={NewMarketsScreenMobile} />
+						<Route exact={true} path="/markets" component={NewMarketsScreenMobile} />
 						<Route path="/ieo" exact component={IEOListMobileScreen} />
 						<Route path="/ieo/detail/:ieoID" exact component={IEODetailMobileScreen} />
 						<Route path="/trading-competition" exact component={TradingCompetionListMobileScreen} />
@@ -406,7 +406,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 						<Route path="/airdrops" exact component={AirdropCoinListMobileScreen} />
 						{/* new feature */}
 						<Route path="**">
-							<Redirect to="/exchange/" />
+							<Redirect to="/market/" />
 						</Route>
 					</Switch>
 					{isLoggedIn && <WalletsFetch />}
@@ -420,6 +420,8 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 				<Switch>
 					<Route exact={true} path="/magic-link" component={MagicLink} />
 					<PublicRoute loading={userLoading} isLogged={isLoggedIn} path="/banner/authentication/sign-in/basic" component={SignInBasic} />
+					<PublicRoute loading={userLoading} isLogged={isLoggedIn} path="/login" component={SignInBasic} />
+					<PublicRoute loading={userLoading} isLogged={isLoggedIn} path="/signin" component={SignInBasic} />
 					<PublicRoute loading={userLoading} isLogged={isLoggedIn} path="/banner/authentication/sign-up/basic" component={SignUpBasic} />
 					<PublicRoute
 						loading={userLoading}
@@ -442,37 +444,24 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 						component={ChangeForgottenPasswordScreen}
 					/>
 					<PublicRoute
-						loading={userLoading}
+						loading={userLoading} 
 						isLogged={isLoggedIn}
 						path="/email-verification"
 						component={EmailVerificationScreen}
 					/>
-
-
-					<Route path="/portal/dashboard/crm" component={Default} />
-					<Route path="/portal/dashboard/default" component={Default} />
-					<Route path="/portal/pages/profile/overview" component={Default} />
-
-					<PublicRoute path="/admin/account/settings" component={Default} />	
-					<Route path="/admin/profile/overview" component={Default} />
-
-					<Route path="/admin/dashboard/crm" component={Default} />
-					<PublicRoute path="/admin/dashboard/default" component={Default} />
-			
-					<Route path="/admin/pages/profile/wallets" component={Default} />
+					{/*
 					<PublicRoute path="/banner/authentication/sign-in/basic" component={SignInBasic} />
-					<PublicRoute path="/auth/authentication/sign-in/cover" component={SignInBasic} />
 					<PublicRoute path="/banner/authentication/sign-up/basic" component={SignUpBasic} />
+					*/}
 
-					
-					
-				
+							
+				 
 					<Route path="/404" component={RestrictedScreen} />
 					<Route path="/500" component={MaintenanceScreen} />
-					<Route exact={false} path="/exchange/:market?" component={TradingScreen} />
-					{/*<Route exact={true} path="/" component={FortemIOHomePage} />*/}
+					<Route exact={false} path="/market/:market?" component={TradingScreen} />
+					<Route exact={true} path="/" component={FortemIOHomePage} />
 					<Route exact={false} path="/fee" component={AssetsFeeScreen} />
-					<Route exact path="/exchange/markets" component={MarketsList} />
+					<Route exact path="/markets" component={MarketsList} />
 					<Route path="/announcement" exact component={AnnouncementScreen} />
 					<Route path="/referral" component={Referral} />
 
@@ -494,23 +483,24 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 						path="/announcement/detail/:id"
 						component={AnnouncementDetail}
 					/>
+					{/* Dashboard Page */}
+					<PrivateRoute loading={userLoading}	isLogged={isLoggedIn} path="/admin/dashboard/default" exact	component={Default} />
+
 					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/orders" component={OrdersTabScreen} />
 					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/history" component={HistoryScreen} />
 					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/banner/authentication/confirm/basic" component={ConfirmBasic} />
 					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/confirm" component={ConfirmScreen} />
-					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/profile" component={ProfileScreen} />
+					{/* OLD Profile Page */}
+					{/* <PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/profile" component={ProfileScreen} /> */}
+					{/* NEW Profile Page */}
+					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/admin/account/settings" component={Default} />
+					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/admin/profile/settings" component={Default} />
+					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/profile" component={Default} />
+
+
+					{/*Profile Test Page */}
 					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/admin/pages/profile/overview" component={Default} />
-					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/admin/pages/profile/perfil" component={Default} />
-					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/admin/pages/profile/limite" component={Default} />
-					{/* <PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/wallets" component={WalletsScreen} /> */}
-					<PrivateRoute
-						loading={userLoading}
-						isLogged={isLoggedIn}
-						path="/wallets"
-						exact
-						component={WalletListScreen}
-					/>
-					<PrivateRoute
+					<PrivateRoute loading={userLoading} isLogged={isLoggedIn} path="/wallets" exact component={WalletListScreen} />					<PrivateRoute
 						loading={userLoading}
 						isLogged={isLoggedIn}
 						path="/wallets/deposit/:currency_id"
@@ -551,15 +541,16 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 					/>
 					{/* old feature */}
 					<Route path="/tokens" exact component={SaleListScreen} />
-					<Route path="/tokens/detail/:ieoID" exact component={SaleDetailScreen} />
+					<Route path="/ieo/detail/:ieoID" exact component={SaleDetailScreen} />
 					<Route path="/vote" exact component={VoteScreen} />
 					<Route path="/trading-competition" exact component={CompetitionListingScreen} />
 					<Route path="/trading-competition/:competition_id" exact component={CompetitionDetailScreen} />
 					<Route path="/stake" exact component={StakingListScreen} />
 					<Route path="/stake/detail/:stake_id" exact component={StakingDetailScreen} />
 					<Route path="**">
-						<Redirect to="/" />
+						<Redirect to="/market/" />
 					</Route>
+
 				</Switch>
 				{isLoggedIn && <WalletsFetch />}
 				{this.handleRenderExpiredSessionModal()}
