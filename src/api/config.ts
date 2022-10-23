@@ -3,12 +3,12 @@ import { Config } from './types';
 
 export const defaultConfig: Config = {
 	api: {
-		authzURL: 'http://demo.fortem-financial.io/api/v2/authz',
-		switchURL: 'http://demo.fortem-financial.io/api/v2/switch',
-		transactionURL: 'http://demo.fortem-financial.io/api/v2/fortem',
+		authzURL: 'https://www.fortem1.com.br/api/v2/barong',
+		switchURL: 'https://www.fortem1.com.br/api/v2/applogic',
+		transactionURL: 'https://www.fortem1.com.br/api/v2/peatio',
 		ieoURL: 'http://api.fortem-financial.io/api/v2/fortem',
 
-		downstreamURL: 'ws://demo.fortem-financial.io/api/v2/downstream',
+		downstreamURL: 'wss://www.fortem1.com.br/api/public',
 	},
 	minutesUntilAutoLogout: '15',
 	rangerReconnectPeriod: '1',
