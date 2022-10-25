@@ -2,7 +2,7 @@
 	"name": "@fortem/portal-ui",
 	"version": "1.2.59",
 	"private": true,
-	"homepage": "http://demo.fortem-financial.io/",
+	"homepage": "https://www.fortem1.com.br/",
 	"dependencies": {
 		"@ant-design/icons": "^4.3.0",
 		"@asseinfo/react-kanban": "^2.2.0",
