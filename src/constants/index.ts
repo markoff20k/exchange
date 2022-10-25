@@ -1,6 +1,6 @@
 import { DropdownElem } from '../components/Order';
 
-export const PG_TITLE_PREFIX = 'FORTEM Financial';
+export const PG_TITLE_PREFIX = 'FORTEM ONE - Ativos Digitais';
 
 export const pgRoutes = (isLoggedIn: boolean, isLight?: boolean): string[][] => {
 	const routes = [
