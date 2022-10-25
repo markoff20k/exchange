@@ -1,6 +1,6 @@
-import { transactionURL } from 'api';
 import axios from 'axios';
 import { TradingChartComponent } from '.';
+import { transactionURL } from '../../api/config';
 import { LibrarySymbolInfo } from '../../charting_library/datafeed-api';
 import { klineArrayToObject, KlineState, klineUpdatePeriod, klineUpdateTimeRange } from '../../modules';
 import { Market } from '../../modules/public/markets';
@@ -45,7 +45,7 @@ export const dataFeedObject = (tradingChart: TradingChartComponent, markets: Mar
 				symbol: m.id,
 				full_name: m.name,
 				description: m.name,
-				exchange: 'Fortem Exchange',
+				exchange: 'Fortem1 Exchange',
 				ticker: m.id,
 				type: 'bitcoin',
 				currency_code: m.quote_unit.toUpperCase(),
@@ -56,7 +56,7 @@ export const dataFeedObject = (tradingChart: TradingChartComponent, markets: Mar
 			const symbol = markets.find(m => m.id === symbolName || m.name === symbolName);
 
 			if (!symbol) {
-				return setTimeout(() => onResolveErrorCallback('Ativo não encontrado'), 0);
+				return setTimeout(() => onResolveErrorCallback('Symbol not found'), 0);
 			}
 
 			const symbolStub = {
@@ -65,7 +65,7 @@ export const dataFeedObject = (tradingChart: TradingChartComponent, markets: Mar
 				description: '',
 				type: 'bitcoin',
 				session: '24x7',
-				timezone: 'America/Sao_Paulo',
+				timezone: 'Etc/UTC',
 				ticker: symbol.id,
 				minmov: 1,
 				pricescale: Math.pow(10, symbol.price_precision),

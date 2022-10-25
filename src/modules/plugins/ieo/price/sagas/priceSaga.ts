@@ -18,7 +18,7 @@ export function* getPrice(action: GetPrice) {
 			price.data[key] = Number(price.data[key]);
 		});
 		let newPrice = { ...price.data };
-		const ftkPrice = yield axios.get('https://demo.fortem-financial.io/api/v2/fortem/public/markets/ftkusd/tickers');
+		const ftkPrice = yield axios.get('https://www.fortem1.com.br/api/v2/peatio/public/markets/ftkusd/tickers');
 
 		newPrice = {
 			...newPrice,

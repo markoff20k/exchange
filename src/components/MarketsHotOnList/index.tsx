@@ -84,7 +84,7 @@ export const MarketsHotOnlist: React.FC<any> = () => {
 		}
 	}, [marketTickers, markets, defaultTicker, marketNames.length]);
 
-	const BASE_MARKET_URL = 'http://demo.fortem-financial.io/api/fortem/public/markets';
+	const BASE_MARKET_URL = 'https://www.fortem1.com.br/api/v2/peatio/public/markets';
 	const fetchMarketsKlines = async (marketId: string, from: number, to: number) => {
 		try {
 			const klines = await axios.get(
