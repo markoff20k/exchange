@@ -461,7 +461,7 @@ class LayoutComponent extends React.Component<LayoutProps, LayoutState> {
 					<Route exact={false} path="/market/:market?" component={TradingScreen} />
 					<Route exact={true} path="/" component={FortemIOHomePage} />
 					<Route exact={false} path="/fee" component={AssetsFeeScreen} />
-					<Route exact path="/markets" component={MarketsList} />
+					<Route exact path="/advanced" component={MarketsList} />
 					<Route path="/announcement" exact component={AnnouncementScreen} />
 					<Route path="/referral" component={Referral} />
 
