@@ -8,11 +8,11 @@ export const defaultConfig: Config = {
 		transactionURL: 'https://www.fortem1.com.br/api/v2/peatio',
 		ieoURL: 'https://www.fortem1.com.br/api/v2/peatio',
 
-		downstreamURL: 'wss://www.fortem1.com.br/api/public/',
+		downstreamURL: 'wss://www.fortem1.com.br/api/v2/ranger',
 	},
 	minutesUntilAutoLogout: '3600',
 	rangerReconnectPeriod: '0.5',
-	withCredentials: true,
+	withCredentials: false,
 	storage: {},
 	gaTrackerKey: '',
 	msAlertDisplayTime: '5000',
