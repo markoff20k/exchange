@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const instance = axios.create({
 		
-	baseURL: 'http://demo.fortem-financial.io:4500/',
+	baseURL: 'http://www.fortem1.com.br:4500/',
 	headers: {
 		'Access-Control-Allow-Origin': '*',
 		'Content-Type': 'application/json',

@@ -45,7 +45,7 @@ const MarketChartItem = styled.div`
 	}
 `;
 
-const BASE_MARKET_URL = 'http://demo.fortem-financial.io/api/fortem/public/markets';
+const BASE_MARKET_URL = 'https://www.fortem1.com.br/api/v2/peatio/public/markets';
 
 export const NewMarketSlick: React.FC<any> = () => {
 	const defaultTicker = {
