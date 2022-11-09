@@ -11,7 +11,7 @@ export const defaultConfig: Config = {
 		downstreamURL: 'wss://www.fortem1.com.br/api/v2/ranger',
 	},
 	minutesUntilAutoLogout: '1',
-	rangerReconnectPeriod: '0.5',
+	rangerReconnectPeriod: '1',
 	withCredentials: false,
 	storage: {},
 	gaTrackerKey: '',
