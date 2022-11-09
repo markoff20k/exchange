@@ -636,7 +636,7 @@
 		padding-top: 0;
 		width: 100vw;
 	}.trading-layout {
-	background: black;
+	background: #000;
 }.pg-sign-up-screen {
 
 	display: flex;
@@ -4050,7 +4050,7 @@
 						}.subheaderDesktop-screen .subheader__right-menu__item__title__icon {
 						font-size: 14px;
 					}.footerDesktop-screen {
-	background: transparent;
+	background: #000 !important;
 	color: white;
 	font-size: 15px;
 	margin-bottom: -20px;
@@ -4061,7 +4061,6 @@
 	}
 		}.footerDesktop-screen .footer {
 		padding-bottom: 20px;
-		padding-top: 45px;
 	}.footerDesktop-screen .footer__logo__img:hover img {
 						-webkit-transform: translateY(10px);
 						        transform: translateY(10px);
@@ -4099,6 +4098,7 @@
 				letter-spacing: 0.5px;
 			}.footerDesktop-screen .footer__news__take-email__label {
 					color: rgba(255, 255, 255, 0.7);
+					margin-bottom: 5px;
 				}.footerDesktop-screen .footer__news__take-email__input::-webkit-input-placeholder {
 						color: white;
 						opacity: 0.7;
