@@ -247,7 +247,7 @@ export const Header: React.FC = () => {
 						</div>
 						<div className="header__left-menu__dropdown flex-shrink-0  ">
 							<div className="header__left-menu__dropdown__wrap" style={{ top: '4px', fontSize:'30px !important', color: '#fff',  left: '50px' }} >
-								|                    EXCHANGE 
+								|                    EXCHANGE PRO
 							</div>
 						</div>
 

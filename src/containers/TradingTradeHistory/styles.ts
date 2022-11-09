@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MarketHistory = styled.div`
 	background color = #0b1426;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 25px;
 	padding: 10px;
 	padding-right: 10px;
@@ -30,7 +30,7 @@ export const MarketHistory = styled.div`
 					font-weight: 500;
 					.td-tabs-tab-btn {
 						color: #fff;
-						border-bottom: 2px solid #2fb67e;
+						border-bottom: 2px solid #009991;
 					}
 				}
 				:not(:last-child) {
@@ -71,10 +71,10 @@ export const MarketHistory = styled.div`
 		font-weight: 300;
 		height: 100%;
 		&__negative {
-			color: #ef5350;
+			color: #DA2C43;
 		}
 		&__positive {
-			color: #13b887;
+			color: #00CC99;
 		}
 		.td-table-container {
 			padding-top: 10px;

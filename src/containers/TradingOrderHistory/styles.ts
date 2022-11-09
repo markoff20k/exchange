@@ -21,7 +21,7 @@ export const OrderHistoryStyle = styled.div`
 				display: flex;
 				align-items: center;
 				.td-open-orders-tabs__cancel {
-					color: white;
+					color: #F5F5F5;
 					cursor: pointer;
 					:hover {
 						color: red;
@@ -42,7 +42,7 @@ export const OrderHistoryStyle = styled.div`
 							font-weight: 600;
 							.rc-tabs-tab-btn {
 								color: #fff;
-								border-bottom: 2px solid #2fb67e;
+								border-bottom: 2px solid #009991;
 							}
 						}
 						:not(:last-child) {
@@ -83,7 +83,7 @@ export const TableStyle = styled.table`
 	width: 100%;
 	table-layout: fixed;
 	border-collapse: collapse;
-	color: white;
+	color: #F5F5F5;
 	thead {
 		color: #848e9c;
 		tr {

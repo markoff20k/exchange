@@ -145,7 +145,7 @@ const OrderBookContainer = props => {
 			return arrAsksElm.map((item, i) => (
 				<div className="flash_red"> 
 				<TrStyle
-					color="#DA2C43"
+					color="#9C2542"
 					placement="left"
 					percentWidth={(item[3] as number) || 0}
 					key={i}
@@ -262,14 +262,15 @@ const OrderBookContainer = props => {
 								className={`p-0  td-order-book-ticker__last-price d-flex align-items-center td-order-book-item__${cls}`}
 								lg="auto"
 							>
-								{Decimal.formatRemoveZero(
+								{Decimal.format(
 									+get(currentTicker, 'last', 0),
-									get(currentMarket, 2, 0),
+									get(currentMarket, 2, 2),
 								)}
+								
 								{cls === 'positive' ? <img src={upSvg} /> : <img src={downSvg} />}
 							</Col>
 							<Col className={`p-0  td-order-book-ticker__usd d-flex align-items-center`} lg="auto">
-								${' '}
+								R${' '}
 								<ConvertUsd
 									value={+get(currentTicker, 'last', 0)}
 									symbol={get(currentMarket, 'quote_unit', '')}

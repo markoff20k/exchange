@@ -33,7 +33,7 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 
 		&-item__negative {
 			opacity: 1;
-			color: #ED0A3F;
+			color: #DA2C43;
 			font-size: 13px;
 			font-weight: 600;
 			-webkit-filter: brightness(130%);
