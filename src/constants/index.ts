@@ -48,9 +48,9 @@ export const DEFAULT_MARKET = {
 export const colors = {
 	light: {
 		chart: {
-			primary: '1a243b',
-			up: '#00CC99',
-			down: '#DA2C43',
+			primary: '#fff',
+			up: '#54B489',
+			down: '#E85E59',
 		},
 		navbar: {
 			sun: 'var(--icons)',
@@ -73,9 +73,9 @@ export const colors = {
 	},
 	basic: {
 		chart: {
-			primary: '1a243b',
-			up: '#00CC99',
-			down: '#DA2C43',
+			primary: 'var(--rgb-body-background-color)',
+			up: 'var(--rgb-bids)',
+			down: 'var(--rgb-asks)',
 		},
 		navbar: {
 			sun: 'var(--primary-text-color)',
