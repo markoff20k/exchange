@@ -16030,8 +16030,7 @@
 	background: #000 !important;
 	color: white;
 	font-size: 15px;
-	margin-bottom: -20px;
-    margin-top: 20px !important;
+
 }.footerDesktop-screen .container-footer-screen {
 		margin: 0 20px;
 	}@media screen and (min-width: 1200px) {.footerDesktop-screen .container-footer-screen {
