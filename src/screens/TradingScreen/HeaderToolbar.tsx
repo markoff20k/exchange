@@ -166,7 +166,7 @@ const HeaderToolbarContainer: React.FC = () => {
 			<div className="td-header__toolbar--right">
 				<img src={playSvg} />
 				<a className="link-tutorial" href="/">
-					Spot Tutorial
+					Tutorial
 				</a>
 			</div>
 		</HeaderToolbarStyle>

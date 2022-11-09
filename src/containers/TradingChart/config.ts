@@ -9,7 +9,7 @@ export const widgetParams = {
 
 export const widgetOptions = (colorTheme?: string) => {
 	return {
-		allow_symbol_change: false,
+		allow_symbol_change: true,
 		autosize: true,
 		calendar: true,
 		client_id: 'tradingview.com',

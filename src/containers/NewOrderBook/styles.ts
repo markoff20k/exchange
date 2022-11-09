@@ -17,27 +17,38 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 	bottom: 0;
 	right: 0;
 	height: calc(100% - 6px);
-	color: white;
-	
-	font-weight: 500;
+	font-size: 13px;
+	font-weight: 600;
 	padding: 0 10px;
-	background-color: #0b1426;
+
 	.td-order-book {
-		background-color: #0b1426;
-		animation:        flashX 2.5s ;
+		font-family: sans-serify;
+		font-size: 13px;
+		color: #F5F5F5;
+		opacity: 0.85;
 		height: 100%;
-		font-weight: 500;
-		padding-top: 10px;
+		font-weight: 600;
+		padding-top: 15px;
 		padding-bottom: 15px;
+
 		&-item__negative {
-			color: #ef5350;
+			opacity: 1;
+			color: #ED0A3F;
+			font-size: 13px;
+			font-weight: 600;
+			-webkit-filter: brightness(130%);
 			webkit-animation: flash_red 2.5s ; /* Safari 4+ */
 			moz-animation:    flash_red 2.5s ; /* Fx 5+ */
 			o-animation:      flash_red 2.5s ; /* Opera 12+ */
 			animation:         flash_red 2.5s ; /* IE 10+ */	
 		}
 		&-item__positive {
-			color: #13b887;
+			opacity: 1;
+			color: #00CC99;
+			font-size: 13px;
+			font-weight: 600;
+
+			-webkit-filter: brightness(130%);
 			webkit-animation: flash_green 2.5s ; /* Safari 4+ */
 			moz-animation:    flash_green 2.5s ; /* Fx 5+ */
 			o-animation:      flash_green 2.5s ; /* Opera 12+ */
@@ -57,8 +68,10 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			padding-top: 6px;
 			padding-bottom: 6px;
 			color: #7a7e8b;
-			font-size: 13px;
-			filter: brightness(130%);
+			font-size: 14.5px;
+			font-weight: 700;
+			-webkit-filter: brightness(150%);
+
 
 			> div {
 				display: inline-block;
@@ -71,13 +84,14 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 		}
 		&-ticker {
 			height: ${OrderBookStyleVar.tickerHeight};
-			margin: 5px 18px !important;
-			font-size: 14px;
+			text-align: center;
+			justify-content: center;
+			font-size: 17px;
 			&__last-price {
 				font-size: 18px;
 			}
 			&__usd {
-				color: #0b1426 ;
+				color: gray;
 			}
 		}
 		&-table {
@@ -94,15 +108,15 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			thead,
 			tbody {
 				display: block;
-				animation:        flashX 2.5s ;
+				
 				tr {
 					display: block;
 					background-color: transparent;
 					cursor: pointer;
-					animation:        flashX 2.5s ;
+				
 					:hover {
-						background-color: #0b1426 ;
-						animation:        flashX 2.5s ;
+						backdrop-filter: blur(10px);
+						
 					}
 					td,
 					th {
@@ -121,8 +135,8 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			}
 			tbody {
 				height: 100%;
-				overflow-y: scroll;
-				animation:        flashX 2.5s ;
+				overflow-y: hidden;
+				
 				tr {
 					margin-top: 1px;
 					margin-bottom: 1px;
@@ -141,17 +155,13 @@ export const OrderBookStyle = styled.div<OrderBookProps>`
 			}
 			&.td-reverse-table-body {
 				tbody {
-					animation:        flashX 2.5s ;
+					
 					transform: rotate(180deg);
 					.td-order-book-table__empty_data {
 						transform: rotate(180deg);					
 					}
 					tr {
 						direction: rtl;
-						webkit-animation: flash_red 2.5s ; /* Safari 4+ */
-						moz-animation:    flash_red 2.5s ; /* Fx 5+ */
-						o-animation:      flash_red 2.5s ; /* Opera 12+ */
-						animation:         flash_red 2.5s ; /* IE 10+ */	
 						td {
 							transform: rotate(180deg);
 							webkit-animation: flash_red 2.5s ; /* Safari 4+ */

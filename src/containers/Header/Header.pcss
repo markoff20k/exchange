@@ -1,19 +1,22 @@
 .headerDesktop-screen {
-	background: black !important;;
-	color: white;
-	padding: 1rem 0.5rem;
-	height: 80px;
+	background: #000 !important;
+	color: #fff !important;
+	opacity: 0.84 !important;
+	height: 32px !important;
+	
+	padding-top: 5px !important;
+	padding-left:30px;	
 
 
 	.container-header {
-		margin: 0 20px;
-		padding-top: 20px;
+		
+		
 		
 	}
 
 	img {
 		display: block;
-		width: 150px;
+		width: 170px;
 	}
 
 	a {
@@ -21,14 +24,15 @@
 		text-decoration: none !important;
 	}
 
-	.custom-poiter {
-		cursor: pointer;
-	}
-
+	
 	.header {
 		&__left-menu {
+			opacity: 0.81 !important;		
+			letter-spacing: 0.5px;
+			
+
 			&__logo {
-				padding-right: 10px;
+	
 			}
 
 			&__dropdown {
@@ -48,10 +52,11 @@
 					display: inline-block;
 					position: relative;
 					text-decoration: none;
+					font-size: 18px !important;
 
 					&--active {
 						a {
-							color: #18988F !important;
+							
 						}
 					}
 
@@ -63,7 +68,7 @@
 						&::before {
 							background-color: #fff;
 							content: '';
-							height: 60px;
+							
 							opacity: 0;
 							position: absolute;
 							width: 100%;
@@ -125,7 +130,7 @@
 						box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 						display: none;
 						left: 50% !important;
-						margin-top: 18px;
+						
 						min-width: 200px;
 						position: absolute;
 						right: auto !important;
@@ -144,7 +149,7 @@
 
 					&__content a:hover {
 						background-color: black;
-						color: #1EDED0 !important;
+						
 					}
 
 					&__content link:hover {

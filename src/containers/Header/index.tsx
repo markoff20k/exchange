@@ -246,8 +246,8 @@ export const Header: React.FC = () => {
 							</Link>
 						</div>
 						<div className="header__left-menu__dropdown flex-shrink-0  ">
-							<div className="header__left-menu__dropdown__wrap" style={{ top: '4px', font:'36px', color: '#1EDED0',  left: '20px' }} >
-								|  EXCHANGE  | 
+							<div className="header__left-menu__dropdown__wrap" style={{ top: '4px', fontSize:'30px !important', color: '#fff',  left: '50px' }} >
+								|                    EXCHANGE 
 							</div>
 						</div>
 
@@ -258,17 +258,7 @@ export const Header: React.FC = () => {
 						
 						
 						
-						<div className="header__left-menu__dropdown flex-shrink-0">
-							<div className={classLinkActive('markets')} onClick={() => setStateActiveNow('markets')} style={{left: '20px' }}>
-								<Link
-									to="/markets"
-									className="header__left-menu__dropdown__wrap__dropbtn d-flex flex-row align-items-center"
-								>
-									Mercados
-								</Link>
-							</div>
-						</div>
-
+						
 
 
 	
