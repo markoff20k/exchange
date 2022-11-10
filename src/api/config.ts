@@ -12,7 +12,7 @@ export const defaultConfig: Config = {
 	},
 	minutesUntilAutoLogout: '1',
 	rangerReconnectPeriod: '1',
-	withCredentials: false,
+	withCredentials: true,
 	storage: {},
 	gaTrackerKey: '',
 	msAlertDisplayTime: '5000',
