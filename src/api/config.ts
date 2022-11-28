@@ -3,12 +3,12 @@ import { Config } from './types';
 
 export const defaultConfig: Config = {
 	api: {
-		authzURL: 'https://exchange.fortem1.com.br/api/v2/barong',
-		switchURL: 'https://exchange.fortem1.com.br/api/v2/applogic',
-		transactionURL: 'https://exchange.fortem1.com.br/api/v2/peatio',
-		ieoURL: 'https://exchange.fortem1.com.br/api/v2/peatio',
+		authzURL: 'http://exchange.fortem1.com.br/api/v2/barong',
+		switchURL: 'http://exchange.fortem1.com.br/api/v2/applogic',
+		transactionURL: 'http://exchange.fortem1.com.br/api/v2/peatio',
+		ieoURL: 'http://exchange.fortem1.com.br/api/v2/peatio',
 
-		downstreamURL: 'wss://exchange.fortem1.com.br/api/v2/ranger',
+		downstreamURL: 'ws://exchange.fortem1.com.br/api/v2/ranger',
 	},
 	minutesUntilAutoLogout: '3600',
 	rangerReconnectPeriod: '1',
@@ -18,8 +18,8 @@ export const defaultConfig: Config = {
 	msAlertDisplayTime: '5000',
 	incrementalOrderBook: true,
 	finex: false,
-	isResizable: false,
-	isDraggable: false,
+	isResizable: true,
+	isDraggable: true,
 	languages: ['pt'],
 	usernameEnabled: true,
 	sessionCheckInterval: '15000',
